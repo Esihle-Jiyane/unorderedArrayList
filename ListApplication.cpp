@@ -15,6 +15,12 @@ L.Delete (15);
 L.ShowData ();
 L.Insert(30); L.Insert(50); L.Delete (10); 
 L.ShowData (); 
+//Add two new numbers to the list
+L.Insert(45); L.Insert(16);
+//Delete a number from the list
+L.Delete (45); 
+//Display the current list 
+L.ShowData (); 
 
 
 //List S;
