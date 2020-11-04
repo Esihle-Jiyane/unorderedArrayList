@@ -13,7 +13,9 @@ List::~List(void)
 {
 }
 
+//Check if list is empty
 bool List::IsEmpty () { return size==0;}
+//Check if list is full
 bool List::IsFull () {return (size == MaxSize); }
 
 void List::Insert (DataType e)
@@ -35,6 +37,7 @@ void Swap (DataType& x, DataType& y)
   y =Temp;
 }                                  
 
+//Function for deleting variable from list
 void List::Delete (DataType e)
 { 
  int index = 0; 
@@ -55,10 +58,9 @@ if  (!(IsEmpty()))
   }
 }
 
-
+//Function for displaying the entire list
 void List::ShowData ()
 {
-//display the entire list
  for (int index = 0; index < size; index++)
     cout << Item[index] << "   ";
     cout << endl;
